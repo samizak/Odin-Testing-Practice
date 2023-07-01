@@ -1,3 +1,6 @@
 function reverseString(_string) {
-  return [..._string].reverse().join("");
+  if (!_string) return "";
+  return _string.split("").reverse().join("");
 }
+
+module.exports = { reverseString };
